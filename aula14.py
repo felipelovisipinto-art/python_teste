@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 a = 'A'
 b = 'B'
 c = 1.1
 string = 'a={nome2} b={nome1} c={nome3:.2f}'
 formato = string.format(nome1=a, nome2=b , nome3=c)
 
+=======
+a = 'A'
+b = 'B'
+c = 1.1
+string = 'a={nome2} b={nome1} c={nome3:.2f}'
+formato = string.format(nome1=a, nome2=b , nome3=c)
+
+>>>>>>> 8ac0ffb5c4f6b6f52b53bfeee318da2bafe0b586
 print(formato)
