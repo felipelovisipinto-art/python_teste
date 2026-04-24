@@ -1,42 +1,20 @@
-<<<<<<< HEAD
-#if  / elif      / else
-#se / se não se / se não
+# if  / elif      / else
+# se / se não se / se não
 condicao1 = True
 condicao2 = True
 condicao3 = True
 condicao4 = True
 
 if condicao1:
-    print('Código para condição 1')
+    print("Código para condição 1")
 elif condicao2:
-    print('Código para condição 2')
+    print("Código para condição 2")
 elif condicao3:
-    print('Código para condição 3')
+    print("Código para condição 3")
 elif condicao4:
-    print('Código para condição 4')
+    print("Código para condição 4")
 else:
-    print('Nenhuma condição foi satisfeita')
-if 10==10:
-    print('outro if')
-=======
-#if  / elif      / else
-#se / se não se / se não
-condicao1 = True
-condicao2 = True
-condicao3 = True
-condicao4 = True
-
-if condicao1:
-    print('Código para condição 1')
-elif condicao2:
-    print('Código para condição 2')
-elif condicao3:
-    print('Código para condição 3')
-elif condicao4:
-    print('Código para condição 4')
-else:
-    print('Nenhuma condição foi satisfeita')
-if 10==10:
-    print('outro if')
->>>>>>> 8ac0ffb5c4f6b6f52b53bfeee318da2bafe0b586
-print('Fora do if')
+    print("Nenhuma condição foi satisfeita")
+if 10 == 10:
+    print("outro if")
+print("Fora do if")
