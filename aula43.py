@@ -1,9 +1,10 @@
-texto = "Python"
+senha_salva = "123456"
+senha_digitada = ""
+repeticoes = 0
 
-i = 0
+while senha_salva != senha_digitada:
+    senha_digitada = input(f"Sua senha ({repeticoes}x): ")
 
-tamanho_string = len(texto)
+    repeticoes += 1
 
-while i < tamanho_string:
-    print(texto[i], i)
-    i += 1
+print("Aquele laço acima pode ter repetições infinitas")
