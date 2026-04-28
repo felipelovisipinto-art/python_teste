@@ -21,7 +21,7 @@ letra_acertada = ""
 letra_digitada = ""
 
 while True:
-    letra_digitada = input("Digite a primeira letra:")
+    letra_digitada = input("\nDigite a primeira letra:")
     if len(letra_digitada) != 1:
         print("Porfavor digite apenas uma letra por vez.")
         continue
@@ -40,10 +40,10 @@ while True:
             palavra_formada += "*"
     tentativas += 1
     print(
-        f"Seu gabarito atual é: {palavra_formada}\n é foi sua {tentativas} tentativa."
+        f"\nSeu gabarito atual é: {palavra_formada}\n foi sua {tentativas} tentativa."
     )
     if palavra_formada == palavra_secreta:
         print(
-            f'PARANÉNS, voce venceu o jogo!\nA palavra secreta era: "{palavra_secreta}" e voce precisou de {tentativas} tentavias para vencer.'
+            f'\nPARANÉNS, voce venceu o jogo!\nA palavra secreta era: "{palavra_secreta}" e voce precisou de {tentativas} tentavias para vencer.'
         )
         break
