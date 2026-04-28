@@ -43,6 +43,6 @@ while True:
     )
     if palavra_formada == palavra_secreta:
         print(
-            f"PARANÉNS, voce venceu o jogo!\nA palavra secreta era: '{palavra_secreta}' e voce precisou de {tentativas} tentavias para vencer."
+            f'PARANÉNS, voce venceu o jogo!\nA palavra secreta era: "{palavra_secreta}" e voce precisou de {tentativas} tentavias para vencer.'
         )
-    break
+        break
