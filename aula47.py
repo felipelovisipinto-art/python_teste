@@ -38,7 +38,8 @@ while True:
             palavra_formada += i
 
         else:
-            print("*")
+            palavra_formada += "*"
+
     tentativas += 1
     print(
         f"\nSeu gabarito atual é: {palavra_formada}\n foi sua {tentativas} tentativa."
