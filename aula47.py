@@ -33,7 +33,7 @@ while True:
     for i in palavra_secreta:
 
         if i in letra_acertada:
-            i += palavra_formada
+            palavra_formada += i
 
         else:
             palavra_formada += "*"
