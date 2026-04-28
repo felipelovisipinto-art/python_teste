@@ -16,7 +16,11 @@ usuário.
 """
 
 palavra_secreta = "Minduim"
-
-letra = input(
+letra_acertada = ""
+letra_digitada = input(
     "Para começar o jogo, tente adivinhar a palavra secreta.\n Digite a primeira letra:"
 )
+
+while True:
+    for letra_digitada in palavra_secreta:        
+    print('')
