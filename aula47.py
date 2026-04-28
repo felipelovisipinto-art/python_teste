@@ -28,8 +28,12 @@ while True:
     if letra_digitada in palavra_secreta:
         letra_acertada += letra_digitada
 
-    palavra_formada = ''
+    palavra_formada = ""
 
     for i in palavra_secreta:
-        
-        if
+
+        if letra_digitada:
+            palavra_formada += letra_digitada
+
+        else:
+            palavra_formada += "*"
