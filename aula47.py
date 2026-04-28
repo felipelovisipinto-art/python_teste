@@ -23,8 +23,6 @@ letra_acertada = ""
 letra_digitada = ""
 
 while True:
-    os.system("cls")
-
     letra_digitada = input("\nDigite a primeira letra:")
 
     if len(letra_digitada) != 1:
@@ -46,7 +44,9 @@ while True:
 
     tentativas += 1
     print(f"\nSeu gabarito atual é: {palavra_formada}\n{tentativas} tentativa(s).")
+
     if palavra_formada == palavra_secreta:
+        os.system("cls")
         print(
             f'\nPARANÉNS, voce venceu o jogo!\nA palavra secreta era: "{palavra_secreta}" e voce precisou de {tentativas} tentavias para vencer.'
         )
