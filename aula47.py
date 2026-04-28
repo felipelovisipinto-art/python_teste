@@ -24,6 +24,9 @@ while True:
     letra_digitada = input(
         "Para começar o jogo, tente adivinhar a palavra secreta.\n Digite a primeira letra:"
     )
+    if len(letra_digitada) > 1:
+        print("Porfavor digite apenas uma letra por vez.")
+        continue
 
     if letra_digitada in palavra_secreta:
         letra_acertada += letra_digitada
