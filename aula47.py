@@ -15,12 +15,14 @@ Faça a contagem de tentativas do seu
 usuário.
 """
 
+tentativas = 0
 palavra_secreta = "Minduim"
 letra_acertada = ""
-letra_digitada = input(
-    "Para começar o jogo, tente adivinhar a palavra secreta.\n Digite a primeira letra:"
-)
 
 while True:
-    for letra_digitada in palavra_secreta:        
-    print('')
+    letra_digitada = input(
+        "Para começar o jogo, tente adivinhar a palavra secreta.\n Digite a primeira letra:"
+    )
+
+    for letra_digitada in palavra_secreta:
+        print("")
