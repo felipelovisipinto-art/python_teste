@@ -22,6 +22,7 @@ letra_digitada = ""
 
 while True:
     letra_digitada = input("\nDigite a primeira letra:")
+
     if len(letra_digitada) != 1:
         print("Porfavor digite apenas uma letra por vez.")
         continue
