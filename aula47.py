@@ -15,12 +15,16 @@ Faça a contagem de tentativas do seu
 usuário.
 """
 
+import os
+
 tentativas = 0
 palavra_secreta = "Minduim"
 letra_acertada = ""
 letra_digitada = ""
 
 while True:
+    os.system("cls")
+
     letra_digitada = input("\nDigite a primeira letra:")
 
     if len(letra_digitada) != 1:
