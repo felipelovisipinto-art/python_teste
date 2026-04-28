@@ -23,6 +23,5 @@ while True:
     letra_digitada = input(
         "Para começar o jogo, tente adivinhar a palavra secreta.\n Digite a primeira letra:"
     )
-
-    for letra_digitada in palavra_secreta:
-        print("")
+    if letra_digitada in palavra_secreta:
+        letra_acertada += letra_digitada
