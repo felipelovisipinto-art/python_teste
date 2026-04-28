@@ -18,10 +18,12 @@ usuário.
 tentativas = 0
 palavra_secreta = "Minduim"
 letra_acertada = ""
+letra_digitada = ""
 
 while True:
     letra_digitada = input(
         "Para começar o jogo, tente adivinhar a palavra secreta.\n Digite a primeira letra:"
     )
+
     if letra_digitada in palavra_secreta:
         letra_acertada += letra_digitada
