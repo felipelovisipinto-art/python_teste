@@ -41,3 +41,7 @@ while True:
     print(
         f"Seu gabarito atual é: {palavra_formada}\n é foi sua {tentativas} tentativa."
     )
+    if palavra_formada == palavra_secreta:
+        print(
+            f"PARANÉNS, voce venceu o jogo!\nA palavra secreta era: '{palavra_secreta}' e voce precisou de {tentativas} tentavias para vencer."
+        )
