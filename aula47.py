@@ -46,4 +46,6 @@ while True:
         print(
             f'\nPARANÉNS, voce venceu o jogo!\nA palavra secreta era: "{palavra_secreta}" e voce precisou de {tentativas} tentavias para vencer.'
         )
+        letra_acertada = ""
+        tentativas = 0
         continue
