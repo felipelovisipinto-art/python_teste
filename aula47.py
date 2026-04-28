@@ -45,3 +45,4 @@ while True:
         print(
             f"PARANÉNS, voce venceu o jogo!\nA palavra secreta era: '{palavra_secreta}' e voce precisou de {tentativas} tentavias para vencer."
         )
+    break
