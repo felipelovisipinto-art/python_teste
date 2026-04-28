@@ -24,7 +24,7 @@ while True:
     letra_digitada = input("\nDigite a primeira letra:")
 
     if len(letra_digitada) != 1:
-        print("Porfavor digite apenas uma letra por vez.")
+        print("\nPorfavor digite apenas uma letra por vez.")
         continue
 
     if letra_digitada in palavra_secreta:
@@ -38,7 +38,7 @@ while True:
             palavra_formada += i
 
         else:
-            palavra_formada += "*"
+            print("*")
     tentativas += 1
     print(
         f"\nSeu gabarito atual é: {palavra_formada}\n foi sua {tentativas} tentativa."
