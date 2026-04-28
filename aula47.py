@@ -32,7 +32,7 @@ while True:
 
     for i in palavra_secreta:
 
-        if letra_digitada:
+        if letra_digitada in palavra_secreta:
             palavra_formada += letra_digitada
 
         else:
