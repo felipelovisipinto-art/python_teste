@@ -10,4 +10,5 @@ Métodos úteis: append, insert, pop, del, clear, extend, +
 #        -54321
 string = "ABCDE"  # 5 caracteres (len)
 lista = []
-print(lista, type(lista))
+print(bool(lista))  # falsy
+# print(lista, type(lista))
