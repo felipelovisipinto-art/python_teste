@@ -13,5 +13,6 @@ string = "ABCDE"  # 5 caracteres (len)
 # print(lista, type(lista))
 
 #        0    1      2               3    4
+#       -5   -4     -3              -2   -1
 lista = [123, True, "Felipe Lovisi", 1.2, []]
-print(lista)
+print(lista[2], type(lista[2]))
