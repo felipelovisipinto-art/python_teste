@@ -9,7 +9,9 @@ Métodos úteis: append, insert, pop, del, clear, extend, +
 #        +01234
 #        -54321
 string = "ABCDE"  # 5 caracteres (len)
-lista = [123, True, "Felipe Lovisi", 1.2, []]
 # print(bool(lista))  # falsy
 # print(lista, type(lista))
+
+#        0    1      2               3    4
+lista = [123, True, "Felipe Lovisi", 1.2, []]
 print(lista)
