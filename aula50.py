@@ -22,4 +22,4 @@ nome = lista.pop()
 lista.append(1233)
 del lista[-1]
 # lista.clear()
-print(lista, nome)
+print(lista)
