@@ -5,7 +5,7 @@ for in com listas
 2 Iara
 """
 
-lista = ["Felipe", "Minduim", "Iara"]
+lista = ["Felipe", "Minduim", "Iara", "Jefferson", "Adelia"]
 
 for nome in range(len(lista)):
     print(f"{nome} {lista[nome]}")
