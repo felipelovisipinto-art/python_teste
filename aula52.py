@@ -6,3 +6,7 @@ Cuidados com dados mutáveis
 
 lista_a = ["Felipe", "Maria"]
 lista_b = lista_a
+
+
+lista_a[0] = "qualquer coisa"
+print(lista_b)
