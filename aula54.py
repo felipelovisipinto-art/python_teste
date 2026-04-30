@@ -8,5 +8,4 @@ for in com listas
 lista = ["Felipe", "Minduim", "Iara"]
 
 for nome in range(len(lista)):
-    lista[nome]
-    print(nome, lista)
+    print(f"{nome} {lista[nome]}")
