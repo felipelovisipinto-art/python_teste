@@ -7,6 +7,6 @@ for in com listas
 
 lista = ["Felipe", "Minduim", "Iara"]
 
-for nome in lista:
+for nome in len(lista).range():
 
     print(nome)
