@@ -2,5 +2,5 @@
 Introdução ao desempacotamento + tuples (tuplas)
 """
 
-nome1, nome2, nome3 = ["Felipe", "Minduim", "Iara"]
-print(nome2)
+nome1, *resto = ["Felipe", "Minduim", "Iara"]
+print(nome1, resto)
