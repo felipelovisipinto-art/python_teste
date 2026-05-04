@@ -2,6 +2,5 @@
 Introdução ao desempacotamento + tuples (tuplas)
 """
 
-nomes = ["Felipe", "Minduim", "Iara"]
-nome1, nome2, nome3 = nomes
+nome1, nome2, nome3 = ["Felipe", "Minduim", "Iara"]
 print(nome2)
