@@ -2,8 +2,10 @@
 enumerate - enumera iteráveis (índices)
 """
 
-lista = ["Felipe", "Minduim", "Iara", "Jefferson", "Adelia"]
+lista = ["Felipe", "Minduim", "Iara"]
 lista.append("joão")
 
 lista_enumerada = enumerate(lista)
-print(next(lista_enumerada))
+
+for item in lista_enumerada:
+    print(item)
