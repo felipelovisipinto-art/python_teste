@@ -17,3 +17,6 @@ for indice, nome in enumerate(lista):
 #     print("For da tupla: ")
 #     for valor in tupla_enumerada:
 #         print(f"\t{valor}")
+for i in range(10):
+    if i % 2 == 0:
+        print(i)
