@@ -30,8 +30,12 @@ while True:
             print(
                 "Não foi possível apagar o indice escolhido, digite um numero inteiro."
             )
+
         except IndexError:
             print("Indice não existe na sua lista.")
+
+        except Exception:
+            print("Erro desconhecido.")
 
     else:
         print("Digite um código valido.")
