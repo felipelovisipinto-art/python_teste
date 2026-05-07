@@ -31,7 +31,7 @@ while True:
                 "Não foi possível apagar o indice escolhido, digite um numero inteiro."
             )
         except IndexError:
-            print("Primeiro adicione itens a sua lista.")
+            print("Indice não existe na sua lista.")
 
     else:
         print("Digite um código valido.")
