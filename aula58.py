@@ -26,9 +26,12 @@ while True:
         try:
             deletar = int(input("Escolha o item a ser deletado: "))
             lista_compras.pop(deletar)
-        except:
-            print("Não foi possível apagar o indice escolhido")
-            continue
+        except ValueError:
+            print(
+                "Não foi possível apagar o indice escolhido, digite um numero inteiro."
+            )
+        except IndexError:
+            print("Primeiro adicione itens a sua lista.")
 
     else:
         print("Digite um código valido.")
