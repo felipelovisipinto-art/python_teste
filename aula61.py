@@ -13,11 +13,9 @@ salas = [
         "Elaine",  # 0
     ],
     # 2
-    [
-        "Luiz",  # 0
-        "João",  # 1
-        "Eduarda",  # 2
-    ],
+    ["Luiz", "João", "Eduarda", (0, 2, 3, 4)],  # 0  # 1  # 2
 ]
 
+print(salas[1][0])
 print(salas[0][1])
+print(salas[2][2])
