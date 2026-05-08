@@ -20,4 +20,4 @@ salas = [
     ],
 ]
 
-print(salas)
+print(salas[0][1])
