@@ -3,9 +3,18 @@ Lista de listas e seus índices
 """
 
 salas = [
-    #
     [
         "Maria",
         "Helena",
-    ],  # 0
+    ],
+    [
+        "Elaine",
+    ],
+    [
+        "Luiz",
+        "João",
+        "Eduarda",
+    ],
 ]
+
+print(salas)
