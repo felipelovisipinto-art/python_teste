@@ -2,6 +2,7 @@
 Lista de listas e seus índices
 """
 
+i = 0
 salas = [
     # 0
     [
@@ -26,5 +27,7 @@ salas = [
 # print(salas[2][3][2])
 
 for sala in salas:
+    i += 1
+    print(i)
     for aluno in sala:
         print(aluno)
