@@ -12,11 +12,19 @@ salas = [
     [
         "Elaine",  # 0
     ],
-    # 0       1       2          0  1   2   3   4
-    ["Luiz", "João", "Eduarda", (0, 10, 20, 30, 40)],  # 2
+    # 2
+    [
+        "Luiz",  # 0
+        "João",  # 1
+        "Eduarda",  # 2
+    ],
 ]
 
-print(salas[1][0])
-print(salas[0][1])
-print(salas[2][2])
-print(salas[2][3][2])
+# print(salas[1][0])
+# print(salas[0][1])
+# print(salas[2][2])
+# print(salas[2][3][2])
+
+for sala in salas:
+    for aluno in sala:
+        print(aluno)
