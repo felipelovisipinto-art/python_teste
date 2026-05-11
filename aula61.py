@@ -28,6 +28,6 @@ salas = [
 
 for sala in salas:
     i += 1
-    print(i)
+    print(f"\nSala: {i}")
     for aluno in sala:
         print(aluno)
