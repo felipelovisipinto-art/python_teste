@@ -24,31 +24,24 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
-# Coleta os primeiros 9 digitos do cpf, porem tambem aceita o cpf inteiro.
+# Captura o CPF (o fatiamento no laço garante o uso de apenas 9 dígitos)
 cpf = input("Digite o os primeiros 9 digitos do seu CPF: ")
-
-# seta a variavel soma igual a 0, variavel essa que será responsavel por armazenar a soma e multiplicação dos nove digitos.
 soma = 0
-
-# multiplicador é a variavel responsavel por realizar a multiplicação dos digitos, indo de 10 ate 2.
+# Peso inicial regressivo para o cálculo do 1º dígito
 multiplicador = 10
 
-# laço responsavel por pegar os nove digitos do cpf e realizar primeiro a conversão do cpf de string para int, realizar a multiplicação do digito;
-#  somar para dar o resultado da primeiira etapa.
+# Itera sobre os 9 primeiros dígitos aplicando a multiplicação da fórmula e acumulando
 for i in cpf[:9]:
     numero = int(i)
     numero *= multiplicador
     soma += numero
     multiplicador -= 1
 
-# etapa onde o resultado obitido no loop será multiplicado por 10.
+# Aplica a matemática final do algoritmo do CPF
 multiplicador10 = soma * 10
-
-# etapa onde a multiplicação feita a cima é dividida por 11.
 divisor11 = multiplicador10 % 11
 
-# Variavel responsavel por verificar se o primeiro digito encontrado é maior ou menor que 9, caso seja maior que 9 o resultado é setado como 0.
-primeiro_digito = divisor11 if divisor11 < 10 else 0
+# Se o resto da divisão for maior que 9, o dígito vira 0.
+primeiro_digito = divisor11 if divisor11 <= 9 else 0
 
-# Resultado do primeiro digito do cpf encontrado.
 print(f"O primeiro digito do seu cpf é: {primeiro_digito}")
