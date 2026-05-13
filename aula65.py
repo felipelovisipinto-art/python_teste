@@ -38,10 +38,10 @@ for i in cpf[:9]:
     multiplicador -= 1
 
 # Aplica a matemática final do algoritmo do CPF
-multiplicador10 = soma * 10
-divisor11 = multiplicador10 % 11
+multiplicador_10 = soma * 10
+divisor_11 = multiplicador_10 % 11
 
 # Se o resto da divisão for maior que 9, o dígito vira 0.
-primeiro_digito = divisor11 if divisor11 <= 9 else 0
+primeiro_digito = divisor_11 if divisor_11 <= 9 else 0
 
 print(f"O primeiro digito do seu cpf é: {primeiro_digito}")
