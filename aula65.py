@@ -12,13 +12,9 @@ resultado final formatado no padrão (XXX.XXX.XXX-XX).
 # Captura o CPF (o fatiamento no laço garante o uso de apenas 9 dígitos)
 cpf = input("Digite o os primeiros 9 digitos do seu CPF: ")
 soma = 0
-soma_2 = 0
 
 # Peso inicial regressivo para o cálculo do 1º dígito
 multiplicador = 10
-
-# Peso secundario regressivo para o cálculo do º dígito
-multiplicador_2 = 11
 
 # Itera sobre os 9 primeiros dígitos aplicando a multiplicação da fórmula e acumulando
 for i in cpf[:9]:
@@ -35,6 +31,10 @@ print(f"O primeiro digito do seu cpf é: {primeiro_digito}")
 
 # concatena os 9 digitos com o primeiro digito criado
 dez_digitos = cpf[:9] + str(primeiro_digito)
+
+soma_2 = 0
+# Peso secundario regressivo para o cálculo do 2º dígito
+multiplicador_2 = 11
 
 # Itera sobre os 10 primeiros dígitos aplicando a multiplicação da fórmula e acumulando
 for i in dez_digitos:
