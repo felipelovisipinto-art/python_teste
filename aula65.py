@@ -22,9 +22,7 @@ multiplicador_2 = 11
 
 # Itera sobre os 9 primeiros dígitos aplicando a multiplicação da fórmula e acumulando
 for i in cpf[:9]:
-    numero = int(i)
-    numero *= multiplicador
-    soma += numero
+    soma += int(i) * multiplicador
     multiplicador -= 1
 
 # Aplica a matemática final do algoritmo do CPF
@@ -40,9 +38,7 @@ dez_digitos = cpf[:9] + str(primeiro_digito)
 
 # Itera sobre os 10 primeiros dígitos aplicando a multiplicação da fórmula e acumulando
 for i in dez_digitos:
-    numero = int(i)
-    numero *= multiplicador_2
-    soma_2 += numero
+    soma_2 += int(i) * multiplicador_2
     multiplicador_2 -= 1
 
 # Aplica a matemática final do algoritmo do CPF
