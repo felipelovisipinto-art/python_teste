@@ -13,8 +13,10 @@ resultado final formatado no padrão (XXX.XXX.XXX-XX).
 cpf = input("Digite o os primeiros 9 digitos do seu CPF: ")
 soma = 0
 soma_2 = 0
+
 # Peso inicial regressivo para o cálculo do 1º dígito
 multiplicador = 10
+
 # Peso secundario regressivo para o cálculo do º dígito
 multiplicador_2 = 11
 
@@ -31,7 +33,6 @@ divisor_11 = multiplicador_10 % 11
 
 # Se o resto da divisão for maior que 9, o dígito vira 0.
 primeiro_digito = divisor_11 if divisor_11 <= 9 else 0
-
 print(f"O primeiro digito do seu cpf é: {primeiro_digito}")
 
 # concatena os 9 digitos com o primeiro digito criado
