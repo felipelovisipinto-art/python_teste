@@ -10,7 +10,7 @@ resultado final formatado no padrão (XXX.XXX.XXX-XX).
 """
 
 # Captura o CPF (o fatiamento no laço garante o uso de apenas 9 dígitos)
-cpf = input("Digite o os primeiros 9 digitos do seu CPF: ")
+cpf = input("Digite seu CPF: ").replace(".", "").replace("-", "")
 soma = 0
 
 # Peso inicial regressivo para o cálculo do 1º dígito
@@ -52,4 +52,7 @@ print(f"O segundo digito do seu cpf é: {segundo_digito}")
 
 cpf_2 = cpf[:9] + str(primeiro_digito) + str(segundo_digito)
 
-print(f"Seu cpf é: {cpf_2[:3]}.{cpf_2[3:6]}.{cpf_2[6:9]}-{cpf_2[9:]}")
+if cpf == cpf_2:
+    print(f"Seu cpf: {cpf_2[:3]}.{cpf_2[3:6]}.{cpf_2[6:9]}-{cpf_2[9:]} é valido")
+else:
+    print("Cpf invalido")
