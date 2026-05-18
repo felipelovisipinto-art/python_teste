@@ -9,10 +9,19 @@ verificadores baseados na regra matemática oficial e exibir o
 resultado final formatado no padrão (XXX.XXX.XXX-XX).
 """
 
-# Captura o CPF (o fatiamento no laço garante o uso de apenas 9 dígitos)
-cpf = input("Digite seu CPF: ").replace(".", "").replace("-", "")
-soma = 0
+import re
+import sys
 
+# Captura o CPF (o fatiamento no laço garante o uso de apenas 9 dígitos)
+cpf = input("Digite seu CPF: ")
+cpf = re.sub(r"[^0-9]", "", cpf)
+entrada_sequencial = cpf == cpf[0] * len(cpf)
+
+if entrada_sequencial:
+    print("Voce enviou dados sequenciais")
+    sys.exit()
+
+soma = 0
 # Peso inicial regressivo para o cálculo do 1º dígito
 multiplicador = 10
 
